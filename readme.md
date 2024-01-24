@@ -9,6 +9,9 @@ Before setting up the CI/CD pipeline, make sure you have the following prerequis
 - Docker registry
 - Kubernetes cluster
 
+## GitLab CI/CD pipeline
+Create a .gitlab-ci.yml file in the root of your repository with the following content:
+
 ```bash
 stages:
   - build
@@ -37,4 +40,29 @@ deploy:
 
   script:
     - kubectl --kubeconfig=kubeconfig.yaml apply -f deployment.yaml
+```
+
+## Here Deployment Sample
+
+deployment.yaml:
+```bash
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+spec:
+  replicas: CountReplica
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app
+        image: <your-registry>/<your-image>:<tag>
+        ports:
+        - containerPort: YourPort
 ```
