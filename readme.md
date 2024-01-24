@@ -41,6 +41,11 @@ deploy:
   script:
     - kubectl --kubeconfig=kubeconfig.yaml apply -f deployment.yaml
 ```
+The pipeline consists of two stages:
+
+    Build: This stage builds the Docker image using the Dockerfile and pushes it to the container registry.
+
+    Deploy: This stage deploys the application to the Kubernetes cluster using the updated deployment.yaml file.
 
 ## Here Deployment Sample
 
@@ -65,4 +70,11 @@ spec:
         image: <your-registry>/<your-image>:<tag>
         ports:
         - containerPort: YourPort
+```
+
+## Push the changes to your GitLab repository
+```bash
+git add .
+git commit -m "Configure CI/CD pipeline"
+git push origin main
 ```
