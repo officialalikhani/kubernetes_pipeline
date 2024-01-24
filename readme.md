@@ -1,6 +1,5 @@
 # Kubernetes CI/CD Deplyment
 This repository contains the source code and configuration files for the Project Kubernetes CI/CD Deplyment. The project is built and deployed using GitLab CI/CD pipeline to a Kubernetes cluster.
-Prerequisites
 
 Before setting up the CI/CD pipeline, make sure you have the following prerequisites installed:
 
