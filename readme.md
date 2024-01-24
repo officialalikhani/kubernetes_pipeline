@@ -6,7 +6,7 @@ Before setting up the CI/CD pipeline, make sure you have the following prerequis
 
 - GitLab account and repository
 - Docker installed
-- Docker registry
+- Docker registry (Nexus Repository,Dockerhub)
 - Kubernetes cluster
 
 ## GitLab CI/CD pipeline
