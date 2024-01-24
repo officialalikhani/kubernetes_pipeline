@@ -4,10 +4,10 @@ Prerequisites
 
 Before setting up the CI/CD pipeline, make sure you have the following prerequisites installed:
 
-    GitLab account and repository
-    Docker installed
-    Docker registry
-    Kubernetes cluster
+- GitLab account and repository
+- Docker installed
+- Docker registry
+- Kubernetes cluster
 
 ```bash
 stages:
