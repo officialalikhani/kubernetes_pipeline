@@ -43,9 +43,9 @@ deploy:
 ```
 The pipeline consists of two stages:
 
-    Build: This stage builds the Docker image using the Dockerfile and pushes it to the container registry.
+- Build: This stage builds the Docker image using the Dockerfile and pushes it to the container registry.
 
-    Deploy: This stage deploys the application to the Kubernetes cluster using the updated deployment.yaml file.
+- Deploy: This stage deploys the application to the Kubernetes cluster using the updated deployment.yaml file.
 
 ## Here Deployment Sample
 
